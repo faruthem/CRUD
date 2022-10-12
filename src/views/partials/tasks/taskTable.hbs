@@ -1,0 +1,31 @@
+<table>
+    <thead>
+        <tr>
+            <th>N.</th>
+            <th>Titulo</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tasks}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{title}}</td>
+            <td>{{description}}</td>
+            <td>    
+                    {{#if done}}
+                        <a href="/taggdone/{{_id}}">Realizado</a>
+                    {{else}}
+                        <a href="/taggdone/{{_id}}">Pendiente</a>
+                    {{/if}}
+
+
+                   <a href="/taggdone/{{_id}}">Realizado</a>
+                   <a href="/edit/{{_id}}">Editar</a>
+                   <a href="/delete/{{_id}}">Eliminar</a>
+            </td>
+        </tr>
+         {{/each}}
+    </tbody>
+</table>
