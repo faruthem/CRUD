@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/views/style.css">
+    <title>Registro de usuario</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient( #764464, #5c4357 );
+    }
+    
+    .form-body{
+        width: 400px;
+        min-width: 300px;
+        border-radius: 10px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin: 10px;
+        color:#fff;
+    }
+    
+    .form-body img{
+        width: 150px;
+        display: block;
+        margin: 20px 0;
+        border: 5px solid;
+        border-radius: 100px;
+    }
+    
+    .text{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    
+    .form-body input{
+        display: block;
+        margin: auto;
+        height: 40px;
+        width: 75%;
+        padding-left: 10px;
+        color:#fff;
+        border: 1px solid;
+        border-radius: 2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: transparent;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 1rem;
+        outline: none;
+    }
+    
+    ::placeholder{
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 596);
+    }
+    
+    .form-body input:hover{
+        transition: .5s;
+        border: 1px solid #2e1d2b;
+        color: #2e1d2b;
+    }
+    
+    .form-body button{
+        display:block;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        height: 40px;
+        width: 78%;
+        background: transparent;
+        color: #b9c4c6;
+        border-radius: 2px;
+        cursor: pointer;
+        outline: none;
+        transition: all .5s case;
+    }
+    
+    .form-body button:hover {
+        color: #d5dbdd;
+        border: 2px solid #783b6d;
+        background: linear-gradient(#592c51, #2e1d2b);
+    }
+</style>
+<body>
+    <div class="form-body">
+        <img src="https://cdn.pixabay.com/photo/2017/11/10/05/46/group-2935521_1280.png" alt="user-login">
+        <p class="text">Bienvenido</p>
+        <form action="/signin" method="post" class="login-form">
+            <input type="email" name="email" placeholder="Correo electrónico">
+            <br>
+            <input type="password" name="password" placeholder="Contraseña">
+            <br>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+</body>
+</html>

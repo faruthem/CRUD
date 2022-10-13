@@ -1,3 +1,4 @@
+<!--
 <h1>Edit</h1>
 <form action="/edit/{{task._id}}" method="POST">
 <div>
@@ -9,4 +10,24 @@
     <textarea name="description" id="description" placeholder="Ingresa una descripción: ">{{task.description}}</textarea>
 </div>
 <button>Guardar</button>
-</form>
+</form> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white rounded-0">
+                <h1>Editar Tareas</h1>
+                <form action="/edit/{{task._id}}" method="POST">
+                    <div class="mb-3">
+                        <label for="title">Titulo</label>
+                        <input type="text" name="title" placeholder="Ingresa un titulo" value="{{task.title}}" class="form-control rounded-0 bg-dark text-white" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="description">Descripción</label>
+                        <textarea name="description" id ="description" placeholder="Inserta una descripcion" class="form-control rounded-0 bg-dark text-white">{{task.description}}</textarea>
+                    </div>
+                    <button class="btn btn-outline-success btn-sm mt-2">Guardar</button>    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
