@@ -1,1 +1,6 @@
+#dependencias de NODEJS
 node_modules
+#Variables de entorno
+.env
+# Carpeta de producción
+dist
